@@ -15,4 +15,8 @@ $app->get('/', function () use ($app) {
     return $app->version();
 });
 
+$app->get('/testing', function () use ($app) {
+	echo " testing heroku";
+});
+
 $app->post('/send-notification', "ExampleController@sendNotification");
