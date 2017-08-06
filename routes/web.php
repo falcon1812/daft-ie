@@ -15,4 +15,13 @@ $app->get('/', function () use ($app) {
     return $app->version();
 });
 
+$app->get('/testing', function () use ($app) {
+	echo " testing heroku";
+});
+
+
+$app->get('/testing', function () use ($app) {
+	echo " testing heroku 2";
+});
+
 $app->post('/send-notification', "ExampleController@sendNotification");
